@@ -19,7 +19,7 @@
     <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World | 色图time">
-<meta property="og:url" content="https://github.com/Nyaplus-Beta/ST1/2018/12/16/hello-world/index.html">
+<meta property="og:url" content="https://github.com/Nyaplus-Beta/huno/2018/12/16/hello-world/index.html">
 <meta property="og:site_name" content="色图time">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="default">
@@ -30,10 +30,12 @@
     
     
     
-    <link rel="stylesheet" href="/css/uno.css">
-    <link rel="stylesheet" href="/css/highlight.css">
-    <link rel="stylesheet" href="/css/archive.css">
-    <link rel="stylesheet" href="/css/china-social-icon.css">
+      <link rel="icon" type="image/x-icon" href="/huno/favicon.png">
+    
+    <link rel="stylesheet" href="/huno/css/uno.css">
+    <link rel="stylesheet" href="/huno/css/highlight.css">
+    <link rel="stylesheet" href="/huno/css/archive.css">
+    <link rel="stylesheet" href="/huno/css/china-social-icon.css">
 
 </head>
 <body>
@@ -66,6 +68,15 @@
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
 
+              
+                
+                <li class="navigation__item"><a href="/huno/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/huno/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/huno/archive" title="" class="">归档</a></li>
               
 
             </ul>
@@ -191,13 +202,36 @@ classes that you can use:
     </div>
 
     <!-- js files -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/scale.fix.js"></script>
+    <script src="/huno/js/jquery.min.js"></script>
+    <script src="/huno/js/main.js"></script>
+    <script src="/huno/js/scale.fix.js"></script>
     
 
     
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
     
+
+    <script src="/huno/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
